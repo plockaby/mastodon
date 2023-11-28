@@ -5,6 +5,8 @@ import classNames from 'classnames';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 
+import Overlay from 'react-overlays/Overlay';
+
 import AutosuggestAccountContainer from '../features/compose/containers/autosuggest_account_container';
 
 import AutosuggestEmoji from './autosuggest_emoji';
@@ -220,9 +222,15 @@ export default class AutosuggestInput extends ImmutablePureComponent {
           />
         </label>
 
-        <div className={`autosuggest-textarea__suggestions ${suggestionsHidden || suggestions.isEmpty() ? '' : 'autosuggest-textarea__suggestions--visible'}`}>
-          {suggestions.map(this.renderSuggestion)}
-        </div>
+        <Overlay show={!(suggestionsHidden || suggestions.isEmpty())} offset={[0, 0]} placement='bottom' target={this.input} popperConfig={{ strategy: 'fixed' }}>
+          {({ props }) => (
+            <div {...props}>
+              <div className='autosuggest-textarea__suggestions' style={{ width: this.input?.clientWidth }}>
+                {suggestions.map(this.renderSuggestion)}
+              </div>
+            </div>
+          )}
+        </Overlay>
       </div>
     );
   }
