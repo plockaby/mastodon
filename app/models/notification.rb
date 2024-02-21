@@ -12,6 +12,7 @@
 #  account_id      :bigint(8)        not null
 #  from_account_id :bigint(8)        not null
 #  type            :string
+#  filtered        :boolean
 #
 
 class Notification < ApplicationRecord
@@ -89,7 +90,7 @@ class Notification < ApplicationRecord
   end
 
   class << self
-    def browserable(types: [], exclude_types: [], from_account_id: nil)
+    def browserable(types: [], exclude_types: [], from_account_id: nil, include_filtered: false)
       requested_types = if types.empty?
                           TYPES
                         else
@@ -99,6 +100,7 @@ class Notification < ApplicationRecord
       requested_types -= exclude_types.map(&:to_sym)
 
       all.tap do |scope|
+        scope.merge!(where(filtered: [nil, false])) unless include_filtered || from_account_id.present?
         scope.merge!(where(from_account_id: from_account_id)) if from_account_id.present?
         scope.merge!(where(type: requested_types)) unless requested_types.size == TYPES.size
       end

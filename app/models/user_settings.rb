@@ -47,12 +47,6 @@ class UserSettings
     setting :software_updates, default: 'critical', in: %w(none critical patch all)
   end
 
-  namespace :interactions do
-    setting :must_be_follower, default: false
-    setting :must_be_following, default: false
-    setting :must_be_following_dm, default: false
-  end
-
   def initialize(original_hash)
     @original_hash = original_hash || {}
   end

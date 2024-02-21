@@ -17,6 +17,7 @@ RSpec.describe Api::V1::ConversationsController do
     let(:scopes) { 'read:statuses' }
 
     before do
+      user.account.follow!(other.account)
       PostStatusService.new.call(other.account, text: 'Hey @alice', visibility: 'direct')
       PostStatusService.new.call(user.account, text: 'Hey, nobody here', visibility: 'direct')
     end
