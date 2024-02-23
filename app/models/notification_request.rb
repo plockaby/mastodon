@@ -35,6 +35,6 @@ class NotificationRequest < ApplicationRecord
   private
 
   def prepare_notifications_count
-    self.notifications_count = Notification.where(account: account, from_account: from_account).limit(100).count
+    self.notifications_count = Notification.where(account: account, from_account: from_account, filtered: true).limit(100).count
   end
 end

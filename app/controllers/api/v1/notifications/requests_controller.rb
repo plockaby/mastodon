@@ -18,6 +18,10 @@ class Api::V1::Notifications::RequestsController < Api::BaseController
     render json: @requests, each_serializer: REST::NotificationRequestSerializer, relationships: @relationships
   end
 
+  def show
+    render json: @request, serializer: REST::NotificationRequestSerializer
+  end
+
   def accept
     AcceptNotificationRequestService.new.call(@request)
     render_empty
