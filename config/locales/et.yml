@@ -1840,11 +1840,6 @@ et:
         silence: Konto limiteeritud
         suspend: Konto kustutatud
     welcome:
-      edit_profile_action: Seadista oma profiil
-      edit_profile_step: |-
-        Esmalt seadista oma profiil. Saad lisada profiilipildi, muuta ekraaninime, lisada lühikirjelduse ja teha paljut muud. Vaata üle oma konto seaded. Saad ise otsustada, kui nähtav on konto teiste jaoks, mis keeltes postitusi oma ajavoos näha soovid ning kui privaatne peaks konto olema.
-
-        Kui mõni asi arusaamatuks jääb, siis võib vaadata juhendvideot: https://youtu.be/J4ItbTOAw7Q
       explanation: Siin on mõned nõuanded, mis aitavad alustada
       subject: Tere tulemast Mastodoni
       title: Tere tulemast, %{name}!

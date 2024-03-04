@@ -1288,8 +1288,14 @@ sk:
         silence: Účet bol obmedzený
         suspend: Tvoj účet bol vylúčený
     welcome:
-      edit_profile_action: Nastav profil
+      apps_title: Mastodon aplikácie
+      edit_profile_action: Prispôsob
       explanation: Tu nájdeš nejaké tipy do začiatku
+      feature_action: Zisti viac
+      follow_action: Nasleduj
+      post_title: Vytvor svoj prvý príspevok
+      share_action: Zdieľaj
+      sign_in_action: Prihlás sa
       subject: Vitaj na Mastodone
       title: Vitaj na palube, %{name}!
   users:

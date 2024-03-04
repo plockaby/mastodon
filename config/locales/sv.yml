@@ -1793,6 +1793,7 @@ sv:
       subject: Ditt arkiv är klart för nedladdning
       title: Arkivuttagning
     failed_2fa:
+      details: 'Här är detaljerna för inloggningsförsöket:'
       further_actions_html: Om detta inte var du, rekommenderar vi att du %{action} omedelbart eftersom ditt konto kan ha äventyrats.
       title: Misslyckad tvåfaktorsautentisering
     suspicious_sign_in:
@@ -1834,9 +1835,24 @@ sv:
         silence: Kontot begränsat
         suspend: Konto avstängt
     welcome:
-      edit_profile_action: Profilinställning
-      edit_profile_step: Du kan anpassa din profil genom att ladda upp en profilbild, ändra ditt visningsnamn med mera. Du kan välja att granska nya följare innan de får följa dig.
+      apps_ios_action: Ladda ner på App Store
+      apps_step: Ladda ner våra officiella appar.
+      apps_title: Mastodon-appar
+      edit_profile_action: Anpassa
+      edit_profile_title: Anpassa din profil
       explanation: Här är några tips för att komma igång
+      feature_action: Läs mer
+      feature_audience_title: Skapa förtroende hos din publik
+      feature_creativity: Mastodon stöder ljud-, video- och bildinlägg, tillgänglighetsbeskrivningar, omröstningar, innehållsvarningar, animerade avatarer, anpassade emojis, miniatyrbildskontroll och mer, för att hjälpa dig att uttrycka dig själv online. Oavsett om du publicerar din konst, din musik eller din podcast finns Mastodon där för dig.
+      follow_action: Följ
+      follow_title: Anpassa ditt hemflöde
+      follows_view_more: Visa fler personer att följa
+      post_step: Säg hej till världen med text, foton, videor eller omröstningar.
+      post_title: Skapa ditt första inlägg
+      share_action: Dela
+      share_step: Låt dina vänner veta hur de hittar dig på Mastodon.
+      share_title: Dela din Mastodon-profil
+      sign_in_action: Logga in
       subject: Välkommen till Mastodon
       title: Välkommen ombord, %{name}!
   users:

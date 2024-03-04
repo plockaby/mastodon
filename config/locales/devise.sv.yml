@@ -12,6 +12,7 @@ sv:
       last_attempt: Du har ytterligare ett försök innan ditt konto är låst.
       locked: Ditt konto är låst.
       not_found_in_database: Ogiltigt %{authentication_keys} eller lösenord.
+      omniauth_user_creation_failure: Fel vid skapande av ett konto för denna identitet.
       pending: Ditt konto granskas fortfarande.
       timeout: Din session har avslutats. Vänligen logga in igen för att fortsätta.
       unauthenticated: Du måste logga in eller registrera dig innan du fortsätter.

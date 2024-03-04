@@ -1852,8 +1852,6 @@ lv:
         silence: Konts ierobežots
         suspend: Konts apturēts
     welcome:
-      edit_profile_action: Iestatīt profilu
-      edit_profile_step: Tu vari pielāgot savu profilu, augšupielādējot profila attēlu, mainot parādāmo vārdu un citas lietas. Vari izvēlēties pārskatīt jaunus sekotājus, pirms atļauj viņiem tev sekot.
       explanation: Šeit ir daži padomi, kā sākt darbu
       subject: Laipni lūgts Mastodon
       title: Laipni lūgts uz borta, %{name}!

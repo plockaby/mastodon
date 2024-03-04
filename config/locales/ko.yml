@@ -1813,9 +1813,36 @@ ko:
         silence: 계정 제한 됨
         suspend: 계정 정지 됨
     welcome:
-      edit_profile_action: 프로필 설정
-      edit_profile_step: 프로필 사진을 업로드하거나 사람들에게 표시할 이름을 바꾸는 것 등으로 자신의 프로필을 커스텀 할 수 있습니다. 새로운 팔로워를 검토 후에 허용하도록 할 수도 있습니다.
+      apps_android_action: Google Play에서 다운로드
+      apps_ios_action: App Store에서 다운로드
+      apps_step: 공식 앱을 다운로드해보세요.
+      apps_title: Mastodon 앱
+      checklist_subtitle: '이 새로운 소셜미디어를 시작해봅시다:'
+      checklist_title: 환영 체크리스트
+      edit_profile_action: 개인 맞춤
+      edit_profile_step: 의미있는 프로필을 작성해 상호작용을 늘려보세요.
+      edit_profile_title: 프로필 꾸미기
       explanation: 시작하기 전에 몇가지 팁들을 준비했습니다
+      feature_action: 더 알아보기
+      feature_control_title: 내 타임라인에 대해 통제권을 유지하세요
+      feature_moderation_title: 올바른 중재
+      follow_action: 팔로우
+      follow_step: 흥미로운 사람들을 팔로우하는 것이 마스토돈의 전부입니다.
+      follow_title: 내게 맞는 홈 피드 꾸미기
+      follows_subtitle: 잘 알려진 계정들을 팔로우
+      follows_title: 누구를 팔로우 할 지
+      follows_view_more: 팔로우 할 사람들 더 보기
+      hashtags_recent_count: 최근 %{days}일동안 %{people} 명
+      hashtags_subtitle: 최근 2일간 무엇이 유행했는지 둘러보기
+      hashtags_title: 유행하는 해시태그
+      hashtags_view_more: 유행하는 해시태그 더 보기
+      post_action: 작성
+      post_step: 글, 사진, 영상, 또는 투표로 세상에 인사해보세요.
+      post_title: 첫번째 게시물 쓰기
+      share_action: 공유
+      share_step: 친구에게 마스토돈에서 나를 찾을 수 있는 방법을 알려주세요.
+      share_title: 마스토돈 프로필을 공유하세요
+      sign_in_action: 로그인
       subject: 마스토돈에 오신 것을 환영합니다
       title: 환영합니다 %{name} 님!
   users:

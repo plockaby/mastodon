@@ -1907,8 +1907,6 @@ sl:
         silence: Račun je omejen
         suspend: Račun je suspendiran
     welcome:
-      edit_profile_action: Nastavitve profila
-      edit_profile_step: Profil lahko prilagodite tako, da naložite sliko profila, spremenite pojavno ime in drugo. Lahko izberete, da želite pregledati nove sledilce, preden jim dovolite sledenje.
       explanation: Tu je nekaj nasvetov za začetek
       subject: Dobrodošli na Mastodon
       title: Dobrodošli, %{name}!

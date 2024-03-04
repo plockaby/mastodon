@@ -1,7 +1,7 @@
 ---
 lt:
   about:
-    about_mastodon_html: 'Ateities socialinis tinklas: jokių reklamų, jokių įmonių sekimo, etiškas dizainas ir decentralizacija. Turėk savo duomenis su Mastodon!'
+    about_mastodon_html: 'Ateities socialinis tinklas: jokių reklamų, jokių įmonių sekimo, etiškas dizainas ir decentralizacija! Turėk savo duomenis su Mastodon.'
     contact_missing: Nenustatyta
     contact_unavailable: Nėra
     hosted_on: Mastodon talpinamas %{domain}
@@ -15,11 +15,11 @@ lt:
       other: Sekėjų
     following: Seka
     instance_actor_flash: Ši paskyra yra virtualus veikėjas (-a), naudojamas atstovauti pačiam serveriui, o ne atskiram naudotojui. Tai naudojama federacijos tikslais ir neturėtų būti pristabdyta.
-    last_active: paskutinis aktyumas
+    last_active: paskutinį kartą aktyvus
     link_verified_on: Šios nuorodos nuosavybė buvo patikrinta %{date}
-    nothing_here: Nieko čia nėra!
+    nothing_here: Nieko čia nėra.
     pin_errors:
-      following: Privalai sekti asmenį, kurį nori patvirtinti.
+      following: Privalai sekti žmogų, kurį nori patvirtinti.
     posts:
       few: Įrašai
       many: Įrašo
@@ -37,39 +37,43 @@ lt:
     accounts:
       add_email_domain_block: Blokuoti el. pašto domeną
       approve: Patvirtinti
-      approved_msg: Sėkmingai patvirtinta %{username} registracijos paraiška
+      approved_msg: Sėkmingai patvirtinta %{username} registracijos paraiška.
       are_you_sure: Ar esi įsitikinęs (-usi)?
       avatar: Avataras
       by_domain: Domenas
       change_email:
-        changed_msg: El. paštas sėkmingai pakeistas!
-        current_email: Dabartinis el paštas
-        label: Pakeisti el pašto adresą
-        new_email: Naujas el pašto adresas
-        submit: Pakeisti el pašto adresą
-        title: Pakeisti el pašto adresą vartotojui %{username}
+        changed_msg: El. paštas sėkmingai pakeistas.
+        current_email: Dabartinis el. paštas
+        label: Keisti el. paštą
+        new_email: Naujas el. paštas
+        submit: Keisti el. paštą
+        title: Keisti el. paštą %{username}
       change_role:
+        changed_msg: Vaidmuo sėkmingai pakeistas.
         label: Keisti vaidmenį
         no_role: Jokios vaidmenį
         title: Keisti vaidmenį %{username}
       confirm: Patvirtinti
       confirmed: Patvirtinta
-      confirming: Tvirtinama
+      confirming: Patvirtinama
       custom: Pasirinktinis
       delete: Ištrinti duomenis
-      deleted: Ištrinti
+      deleted: Ištrinta
       demote: Pažeminti
-      disable: Išjungti
+      destroyed_msg: "%{username} duomenys dabar laukia eilėje, kad būtų netrukus ištrinti."
+      disable: Sustabdyti
       disable_sign_in_token_auth: Išjungti el. pašto prieigos rakto tapatybės nustatymą
       disable_two_factor_authentication: Išjungti 2FA
-      disabled: Išjungta
+      disabled: Pristabdyta
       display_name: Rodomas vardas
       domain: Domenas
-      edit: Keisti
-      email: El paštas
-      email_status: El pašto statusas
-      enable: Įjungti
+      edit: Redaguoti
+      email: El. paštas
+      email_status: El. pašto būsena
+      enable: Panaikinti sustabdymą
+      enable_sign_in_token_auth: Įjungti el. pašto prieigos rakto tapatybės nustatymą
       enabled: Įjungta
+      enabled_msg: Sėkmingai panaikintas %{username} paskyros sustabdymas.
       followers: Sekėjai
       follows: Seka
       header: Antraštė
@@ -80,75 +84,145 @@ lt:
       joined: Prisijungė
       location:
         all: Visi
-        local: Lokali
+        local: Vietinis
         remote: Nuotolinis
-        title: Lokacija
-      login_status: Prisijungimo statusas
-      media_attachments: Prisegti medijos failai
-      memorialize: Paversti į memorija
+        title: Vieta
+      login_status: Prisijungimo būsena
+      media_attachments: Medijos priedai
+      memorialize: Paversti į memorialinį
+      memorialized: Memorializuota
+      memorialized_msg: Sėkmingai paversta %{username} į memorialinę paskyrą.
       moderation:
         active: Aktyvus
         all: Visi
+        disabled: Išjungta
+        pending: Laukiama
+        silenced: Ribotas
         suspended: Užrakintas
-        title: Moderacija
-      moderation_notes: Medaracijos žinutės
-      most_recent_activity: Paskutinioji veikla
-      most_recent_ip: Paskutinis IP
-      no_limits_imposed: Be limitu
-      not_subscribed: Ne prenumeruota
-      perform_full_suspension: Užrakinti
+        title: Prižiūrėjimas
+      moderation_notes: Prižiūrėjimo pastabos
+      most_recent_activity: Naujausia veikla
+      most_recent_ip: Naujausias IP
+      no_account_selected: Nebuvo pakeistos jokios paskyros, nes nebuvo pasirinkta nė viena.
+      no_limits_imposed: Nėra nustatytų ribojimų.
+      no_role_assigned: Nėra priskirto vaidmens.
+      not_subscribed: Neužprenumeruota
+      pending: Laukiama peržiūros
+      perform_full_suspension: Pristabdyti
+      previous_strikes: Ankstesni pažeidimai
+      previous_strikes_description_html:
+        few: Šioje paskyroje yra <strong>%{count}</strong> pažeidimai.
+        many: Šioje paskyroje yra <strong>%{count}</strong> pažeidimas.
+        one: Šioje paskyroje yra <strong>vienas</strong> pažeidimas.
+        other: Šioje paskyroje yra <strong>%{count}</strong> pažeidimų.
       promote: Paaukštinti
       protocol: Protokolas
       public: Viešas
-      push_subscription_expires: PuSH prenumeramivas pasibaigė
-      redownload: Perkrauti profilį
-      rejected_msg: Sėkmingai patvirtinta %{username} registracijos paraiška
+      push_subscription_expires: PuSH prenumerata baigiasi
+      redownload: Atnaujinti profilį
+      redownloaded_msg: Sėkmingai atnaujintas %{username} profilis iš kilmės šaltinio.
+      reject: Atmesti
+      rejected_msg: Sėkmingai atmesta %{username} registracijos paraiška.
       remote_suspension_irreversible: Šios paskyros duomenys negrįžtamai ištrinti.
-      remote_suspension_reversible_hint_html: Paskyra jų serveryje buvo sustabdyta, o duomenys bus visiškai pašalinti %{date}. Iki to laiko nuotolinis serveris gali atkurti šią paskyrą be jokių neigiamų pasekmių. Jei norite iš karto pašalinti visus paskyros duomenis, galite tai padaryti toliau.
-      remove_avatar: Panaikinti profilio nuotrauką
-      remove_header: Panaikinti antraštę
-      removed_header_msg: Sėkmingai pašalintas %{username} antraštės paveikslėlis
+      remote_suspension_reversible_hint_html: Paskyra jų serveryje buvo pristabdyta, o duomenys bus visiškai pašalinti %{date}. Iki to laiko nuotolinis serveris gali atkurti šią paskyrą be jokių neigiamų pasekmių. Jei nori iš karto pašalinti visus paskyros duomenis, gali tai padaryti toliau.
+      remove_avatar: Pašalinti avatarą
+      remove_header: Pašalinti antraštę
+      removed_avatar_msg: Sėkmingai pašalintas %{username} avataro vaizdas.
+      removed_header_msg: Sėkmingai pašalintas %{username} antraštės vaizdas.
       resend_confirmation:
-        already_confirmed: Šis vartotojas jau patvirtintas
-        send: Dar kartą išsiųsti patvirtinimo nuorodą
-        success: Patvirtinimo laiškas sėkmingai išsiųstas!
-      reset: Iš naujo
-      reset_password: Atkurti slaptažodį
-      resubscribe: Per prenumeruoti
+        already_confirmed: Šis naudotojas jau patvirtintas.
+        send: Iš naujo siųsti patvirtinimo nuorodą
+        success: Patvirtinimo nuoroda sėkmingai išsiųsta.
+      reset: Nustatyti iš naujo
+      reset_password: Nustatyti iš naujo slaptažodį
+      resubscribe: Prenumeruoti iš naujo
       role: Vaidmuo
       search: Ieškoti
-      search_same_email_domain: Kiti tą patį el. pašto domeną turintys naudotojai
-      search_same_ip: Kiti tą patį IP turintys naudotojai
-      security: Apsauga
+      search_same_email_domain: Kiti naudotojai su tuo pačiu el. pašto domenu
+      search_same_ip: Kiti naudotojai su tuo pačiu IP
+      security: Saugumas
       security_measures:
         only_password: Tik slaptažodis
         password_and_2fa: Slaptažodis ir 2FA
-      sensitized: Pažymėti kaip jautrią informaciją
-      shared_inbox_url: Bendroji gautųjų URL
+      sensitive: Priversti žymėti kaip jautrią
+      sensitized: Pažymėta kaip jautri
+      shared_inbox_url: Bendras gautiejų URL
       show:
-        created_reports: Parašyti raportai
-        targeted_reports: Reportuotas kitų
-      silence: Tyla
-      silenced: Užtildytas
-      statuses: Statusai
+        created_reports: Sukurtos ataskaitos
+        targeted_reports: Pranešė kiti
+      silence: Riboti
+      silenced: Ribotas
+      statuses: Įrašai
+      strikes: Ankstesni pažeidimai
       subscribe: Prenumeruoti
-      suspended: Užrakintas
-      suspension_irreversible: Šios paskyros duomenys negrįžtamai ištrinti. Galite atšaukti paskyros sustabdymą, kad ja būtų galima naudotis, tačiau nebus atkurti jokie anksčiau turėti duomenys.
-      suspension_reversible_hint_html: Paskyra sustabdyta, o duomenys bus visiškai pašalinti %{date}. Iki to laiko paskyrą galima atkurti be jokių neigiamų pasekmių. Jei norite iš karto pašalinti visus paskyros duomenis, galite tai padaryti toliau.
-      title: Vartotojai
-      unblock_email: El. pašto adreso atblokavimas
-      unblocked_email_msg: Sėkmingai atblokuotas %{username} el. pašto adresas
-      unconfirmed_email: Nepatvirtintas el pašto adresas
-      undo_silenced: Atšaukti užtildymą
-      undo_suspension: Atšaukti užrakinimą
-      unsilenced_msg: Sėkmingai panaikintas %{username} paskyros apribojimas
-      unsubscribe: Nebeprenumeruoti
-      unsuspended_msg: Sėkmingai panaikintas %{username} paskyros apribojimas
-      username: Slapyvardis
+      suspend: Pristabdyti
+      suspended: Pristabdyta
+      suspension_irreversible: Šios paskyros duomenys negrįžtamai ištrinti. Gali atšaukti paskyros pristabdymą, kad ja būtų galima naudotis, bet nebus atkurti jokie anksčiau turėti duomenys.
+      suspension_reversible_hint_html: Paskyra pristabdyta, o duomenys bus visiškai pašalinti %{date}. Iki to laiko paskyrą galima atkurti be jokių neigiamų pasekmių. Jei nori iš karto pašalinti visus paskyros duomenis, gali tai padaryti toliau.
+      title: Naudotojai
+      unblock_email: Atblokuoti el. pašto adresą
+      unblocked_email_msg: Sėkmingai atblokuotas %{username} el. pašto adresas.
+      unconfirmed_email: Nepatvirtintas el. pašto adresas.
+      undo_sensitized: Atšaukti privertimą žymėti kaip jautrią
+      undo_silenced: Atšaukti ribojimą
+      undo_suspension: Atšaukti pristabdymą
+      unsilenced_msg: Sėkmingai atšauktas %{username} paskyros ribojimas.
+      unsubscribe: Atšaukti prenumeratą
+      unsuspended_msg: Sėkmingai panaikintas %{username} paskyros pristabdymas.
+      username: Naudotojo vardas
       view_domain: Peržiūrėti domeno santrauką
       warn: Įspėti
+      web: Žiniatinklis
       whitelisted: Leidžiama federacijai
     action_logs:
+      action_types:
+        approve_appeal: Patvirtinti apeliaciją
+        approve_user: Patvirtinti naudotoją
+        assigned_to_self_report: Priskirti ataskaitą
+        change_email_user: Keisti el. paštą naudotojui
+        change_role_user: Keisti naudotojo vaidmenį
+        confirm_user: Patvirtinti naudotoją
+        create_account_warning: Kurti įspėjimą
+        create_announcement: Kurti skelbimą
+        create_canonical_email_block: Kurti el. pašto bloką
+        create_custom_emoji: Kurti pasirinktinį jaustuką
+        create_domain_allow: Kurti domeno leidimą
+        create_domain_block: Kurti domeno bloką
+        create_email_domain_block: Kurti el. pašto domeno bloką
+        create_ip_block: Kurti IP taisyklę
+        create_unavailable_domain: Kurti nepasiekiamą domeną
+        create_user_role: Kurti vaidmenį
+        demote_user: Pažeminti naudotoją
+        destroy_announcement: Ištrinti skelbimą
+        destroy_canonical_email_block: Ištrinti el. pašto bloką
+        destroy_custom_emoji: Ištrinti pasirinktinį jaustuką
+        destroy_domain_allow: Ištrinti domeno leidimą
+        destroy_domain_block: Ištrinti domeno bloką
+        destroy_email_domain_block: Ištrinti el. pašto domeno bloką
+        destroy_instance: Išvalyti domeną
+        destroy_ip_block: Ištrinti IP taisyklę
+        destroy_status: Ištrinti įrašą
+        destroy_unavailable_domain: Ištrinti nepasiekiamą domeną
+        destroy_user_role: Sunaikinti vaidmenį
+        disable_2fa_user: Išjungti 2FA
+        disable_custom_emoji: Išjungti pasirinktinį jaustuką
+        disable_sign_in_token_auth_user: Išjungti el. pašto prieigos rakto tapatybės nustatymą naudotojui
+        disable_user: Išjungti naudotoją
+        enable_custom_emoji: Įjungti pasirinktinį jaustuką
+        enable_sign_in_token_auth_user: Įjungti el. pašto prieigos rakto tapatybės nustatymą naudotojui
+        enable_user: Įjungti naudotoją
+        memorialize_account: Memorializuoti paskyrą
+        promote_user: Paaukštinti naudotoją
+        reject_appeal: Atmesti apeliaciją
+        reject_user: Atmesti naudotoją
+        remove_avatar_user: Pašalinti avatarą
+        reopen_report: Iš naujo atidaryti ataskaitą
+        resend_user: Iš naujo siųsti patvirtinimo laišką
+        reset_password_user: Nustatyti iš naujo slaptažodį
+        resolve_report: Išspręsti ataskaitą
+        sensitive_account: Priversti žymėti kaip jautrią paskyrai
+        silence_account: Riboti paskyrą
+        suspend_account: Pristabdyti paskyrą
       title: Audito žurnalas
     custom_emojis:
       by_domain: Domenas
@@ -606,7 +680,6 @@ lt:
         silence: Paskyra limituota
         suspend: Paskyra užrakinta
     welcome:
-      edit_profile_action: Nustatyti profilį
       explanation: Štai keletas patarimų, kaip pradėti
       subject: Sveiki atvykę į Mastodon
       title: Sveiki atvykę, %{name}!

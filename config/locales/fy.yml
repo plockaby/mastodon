@@ -1838,8 +1838,6 @@ fy:
         silence: Account beheind
         suspend: Account beskoattele
     welcome:
-      edit_profile_action: Profyl ynstelle
-      edit_profile_step: Jo kinne jo profyl oanpasse troch in profylfoto op te laden, jo werjeftenamme oan te passen en mear. Jo kinne it hânmjittich goedkarren fan folgers ynstelle.
       explanation: Hjir binne inkelde tips om jo op wei te helpen
       subject: Wolkom op Mastodon
       title: Wolkom oan board %{name}!

@@ -966,6 +966,8 @@
       title: Webhooks
       webhook: Webhook
   admin_mailer:
+    auto_close_registrations:
+      subject: Registreringer for %{instance} har blitt automatisk byttet til å kreve godkjenning
     new_appeal:
       actions:
         delete_statuses: å slette sine innlegg
@@ -1838,8 +1840,6 @@
         silence: Kontoen er begrenset
         suspend: Kontoen er suspendert
     welcome:
-      edit_profile_action: Sett opp profil
-      edit_profile_step: Du kan tilpasse profilen din ved å laste opp et profilbilde, endre visningsnavnet ditt og mer. Du kan velge at nye følgere må godkjennes av deg før de får lov til å følge deg.
       explanation: Her er noen tips for å komme i gang
       subject: Velkommen til Mastodon
       title: Velkommen ombord, %{name}!
